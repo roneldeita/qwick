@@ -1,0 +1,75 @@
+import { Container, Grid, Image, List, Icon, Form } from 'semantic-ui-react'
+
+const Slogan = {
+  color:'#ffffff',
+  fontSize:'32px',
+  fontWeight:200,
+}
+export default () => (
+  <Container fluid>
+    <div style={{height:'100px', backgroundColor:'#4A70B4'}}>
+      <Container style={{padding:'25px'}}>
+        <p style={Slogan}>Need cash now? Apply ka na ng Qwick cash loan</p>
+      </Container>
+    </div>
+    <div style={{height:'200px'}}>
+      <Container style={{padding:'50px'}}>
+        <Grid columns={4} padded>
+          <Grid.Column>
+            <Image style={{width:'180px'}} src="/static/images/logo.png"/>
+            <br/>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+          </Grid.Column>
+          <Grid.Column>
+            <h3 style={{margin:'30px 0px 35px 0px'}}>LINKS</h3>
+            <List>
+              <Grid columns={2} divided='vertically'>
+                <Grid.Column>
+                  <List.Item><Icon name="angle right"/>Home</List.Item>
+                  <List.Item><Icon name="angle right"/>Services</List.Item>
+                  <List.Item><Icon name="angle right"/>Events</List.Item>
+                  <List.Item><Icon name="angle right"/>Testimonials</List.Item>
+                </Grid.Column>
+                <Grid.Column style={{marginLeft:'-20px'}}>
+                  <List.Item><Icon name="angle right"/>Contact Us</List.Item>
+                  <List.Item><Icon name="angle right"/>About Us</List.Item>
+                </Grid.Column>
+              </Grid>
+            </List>
+          </Grid.Column>
+          <Grid.Column>
+          <h3 style={{margin:'30px 0px 35px 0px'}}>OUR OFFICE</h3>
+          <List>
+            <List.Item>
+              <List.Icon name="marker"/>
+              <List.Content>Unit 218 pacific Century Tower, 1472-146 Quezon Ave. Brgy. South Triangle Quezon City</List.Content>
+            </List.Item>
+            <List.Item>
+              <List.Icon name="call"/>
+              <List.Content>09183404537</List.Content>
+            </List.Item>
+            <List.Item>
+              <List.Icon name="call"/>
+              <List.Content>09183404537</List.Content>
+            </List.Item>
+            <List.Item>
+              <List.Icon name="mail"/>
+              <List.Content>marketing@qwickfinancial.com</List.Content>
+            </List.Item>
+          </List>
+          </Grid.Column>
+          <Grid.Column>
+            <h3 style={{margin:'30px 0px 35px 0px'}}>EMAIL NEWSLETTER</h3>
+            <p>Get subscriber only insights & news delivered by Finance Pro</p>
+            <Form>
+              <Form.Group>
+                <Form.Input placeholder='Email' name='email' />
+                <Form.Button content='Submit' basic color="blue"/>
+              </Form.Group>
+            </Form>
+          </Grid.Column>
+        </Grid>
+      </Container>
+    </div>
+  </Container>
+)

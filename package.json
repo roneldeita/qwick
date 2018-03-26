@@ -1,0 +1,22 @@
+{
+  "name": "qwickloan",
+  "version": "1.0.0",
+  "description": "Lending Company \u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[CA new lending company in the philippines\u001b[D\u001b[D",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next -p 3008",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ronel A. Deita",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "next": "^5.0.0",
+    "pixeden-stroke-7-icon": "^1.2.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "semantic-ui-react": "^0.79.0"
+  }
+}
