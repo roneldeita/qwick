@@ -7,7 +7,7 @@ const Slogan = {
 }
 export default () => (
   <Container fluid>
-    <div style={{height:'100px', backgroundColor:'#4A70B4'}}>
+    <div style={{height:'100px', backgroundColor:'#3d5fac'}}>
       <Container style={{padding:'25px'}}>
         <p style={Slogan}>Need cash now? Apply ka na ng Qwick cash loan</p>
       </Container>
@@ -16,7 +16,7 @@ export default () => (
       <Container style={{padding:'50px'}}>
         <Grid columns={4} padded>
           <Grid.Column>
-            <Image style={{width:'180px'}} src="/static/images/logo.png"/>
+            <Image style={{width:'180px'}} src="/static/images/logo_new.png"/>
             <br/>
             <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
           </Grid.Column>

@@ -23,6 +23,9 @@ export default (props) => {
         .border{
           border: 1px solid #666666
         }
+        .default-color{
+          color:#3d5fac
+        }
       `}
       </style>
     </div>

@@ -39,23 +39,23 @@ class TopNav extends React.Component {
     }
   }
   StickTopMenu = (e) =>{
-    console.log('show menu')
+    //onsole.log('show menu')
     this.setState({Togglemenu:true})
   }
 
   UnStickTopMenu = (e) =>{
-    console.log('hide menu')
+    //console.log('hide menu')
     this.setState({Togglemenu:false})
   }
   render(){
-    console.log(this.state.Togglemenu)
+    // console.log(this.state.Togglemenu)
     return (
       <div>
         <div style={HeadContainer}>
           <Container style={Head}>
             <Grid>
               <Grid.Column className="" floated='left' width={5}>
-                <img src='/static/images/logo.png' style={Logo} />
+                <img src='/static/images/logo_new.png' style={Logo} />
               </Grid.Column>
               <Grid.Column className="" floated='right' width={7} style={{paddingTop:'25px'}}>
                 <div style={{display:'inline-block'}}>
@@ -95,12 +95,12 @@ class TopNav extends React.Component {
             </Menu.Menu>
           </Menu>
         </Container>
-        <Divider style={{margin:'0px'}}/>
+        <Divider/>
         <Visibility onBottomPassed={this.StickTopMenu} onBottomVisible={this.UnStickTopMenu} once={false}>
           <Sidebar as={Menu} secondary animation='overlay' direction='top' visible={this.state.Togglemenu} style={{backgroundColor:'#ffffff'}}>
             <Container>
               <Menu.Item>
-                <img src='/static/images/logo.png' style={{width:'110px'}} />
+                <img src='/static/images/logo_new.png' style={{width:'110px'}} />
               </Menu.Item>
               <Menu.Item name='Home' active={activeItem === 'homex'} onClick={this.handleItemClick} />
               <Menu.Item name='Loan' active={activeItem === 'loan'} onClick={this.handleItemClick} />

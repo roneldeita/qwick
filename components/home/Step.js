@@ -1,73 +1,49 @@
-import { Container, Grid, Card, Image } from 'semantic-ui-react'
+import { Container, Grid, Card } from 'semantic-ui-react'
+import * as Scroll from 'react-scroll';
+import { Element } from 'react-scroll'
+
 const StepContainer = {
-  margin:'45px 0px 200px 0px',
-  textAlign:'center'
+  padding:'100px 0px 250px 0px',
+  textAlign:'center',
+}
+const Header = {
+  fontSize: '40px',
+  marginBottom:'20px',
+  fontWeight: 300,
 }
 const Title = {
-  color:'#5B8CC2',
-  fontSize: '50px',
-  marginBottom:'0px',
+  fontSize: '24px',
+  marginTop:'20px',
+  marginBottom:'20px',
   fontWeight: 300,
 }
-const SubTitle = {
-  fontSize: '20px',
-  fontWeight: 300,
-  marginBottom:'50px'
+const StepImg = {
+  width:'65%'
 }
 export default () => (
-  <Container style={StepContainer}>
-    <p style={Title}>How it works?</p>
-    <p style={SubTitle}>Claim your money fast. Easy application.</p>
-    <Card.Group itemsPerRow={3}>
-        <Card>
-          <Image src='/static/images/fillout.jpg' />
-          <Card.Content>
-            <Card.Header>
-              FILL OUT FORM
-            </Card.Header>
-            <Card.Meta>
-              <span className='date'>
-                Tell us about yourself and how much you want to borrow.
-              </span>
-            </Card.Meta>
-          </Card.Content>
-        </Card>
-        <Card>
-          <Image src='/static/images/evaluate.jpg' />
-          <Card.Content>
-            <Card.Header>
-              CREDIT EVALUATION
-            </Card.Header>
-            <Card.Meta>
-              <span className='date'>
-                confirmation of your infos, phone interviews, and submission of documents online.
-              </span>
-            </Card.Meta>
-          </Card.Content>
-        </Card>
-        <Card>
-          <Image src='/static/images/money.jpg' />
-          <Card.Content>
-            <Card.Header>
-              GET YOUR MONEY
-            </Card.Header>
-            <Card.Meta>
-              <span className='date'>
-                Pick up your loan check at our offices Monday-Friday. Option to deposit to your bank account available.
-              </span>
-            </Card.Meta>
-          </Card.Content>
-        </Card>
-    </Card.Group>
-    <style jsx global>{`
-      .ui.card>.content>.header,
-      .ui.cards>.card>.content>.header{
-        font-size: 22px !important;
-        margin: 15px 0px !important;
-        color: #5B8CC2 !important;
-        font-weight: 300 !important;
-      }
-    `}
-    </style>
-  </Container>
+  <Element name="steps">
+    <Container fluid>
+      <Container style={StepContainer} className="default-color">
+        <p style={Header}>Claim your money fast. Easy application.</p>
+        <br/>
+        <Grid relaxed='very' columns={3}>
+          <Grid.Column>
+            <img src='/static/images/Fill_Blue-01.png' style={StepImg}/>
+            <p style={Title}>FILL OUT FORM</p>
+            <p>Tell us about yourself and how much you want to borrow.</p>
+          </Grid.Column>
+          <Grid.Column>
+            <img src='/static/images/Approved_Blue-01.png' style={StepImg}/>
+            <p style={Title}>CREDIT EVALUATION</p>
+            <p>confirmation of your infos, phone interviews, and submission of documents online.</p>
+          </Grid.Column>
+          <Grid.Column>
+            <img src='/static/images/Get_Money_Blue-01.png' style={StepImg}/>
+            <p style={Title}>GET YOUR MONEY</p>
+            <p>Pick up your loan check at our offices Monday-Friday. Option to deposit to your bank account available.</p>
+          </Grid.Column>
+        </Grid>
+      </Container>
+    </Container>
+  </Element>
 )
