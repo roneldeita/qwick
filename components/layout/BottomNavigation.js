@@ -7,9 +7,9 @@ const Slogan = {
 }
 export default () => (
   <Container fluid>
-    <div style={{height:'100px', backgroundColor:'#3d5fac'}}>
+    <div style={{minHeight:'100px', backgroundColor:'#3d5fac'}}>
       <Container style={{padding:'25px'}}>
-        <p style={Slogan}>Need cash now? Apply ka na ng Qwick cash loan</p>
+        <p style={Slogan}>Need cash now? Call <b>+63 905 402 7240</b> today!</p>
       </Container>
     </div>
     <div style={{height:'200px'}}>
@@ -46,15 +46,19 @@ export default () => (
             </List.Item>
             <List.Item>
               <List.Icon name="call"/>
-              <List.Content>09183404537</List.Content>
+              <List.Content>0905 402 7240</List.Content>
             </List.Item>
             <List.Item>
               <List.Icon name="call"/>
-              <List.Content>09183404537</List.Content>
+              <List.Content>0918 340 4537</List.Content>
             </List.Item>
             <List.Item>
               <List.Icon name="mail"/>
-              <List.Content>marketing@qwickfinancial.com</List.Content>
+              <List.Content>hershey.romero@qwickfinancial.com</List.Content>
+            </List.Item>
+            <List.Item>
+              <List.Icon name="mail"/>
+              <List.Content>sales@qwickfinancial.com</List.Content>
             </List.Item>
           </List>
           </Grid.Column>

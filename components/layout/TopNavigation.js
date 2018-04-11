@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Sidebar, Menu, Divider, Grid, Sticky, Visibility, Dropdown, Icon } from 'semantic-ui-react'
+import { Container, Sidebar, Menu, Divider, Grid, Visibility, Dropdown, Icon, Button } from 'semantic-ui-react'
 
 const HeadContainer = {
   backgroundColor:'#ffffff',
@@ -17,16 +17,21 @@ const HeadInfo = {
   fontSize:'12px',
   lineHeight:'15px',
   marginBottom:'0px',
-  color:'#b3b3b3'
+  color:'#909090'
 }
 const HeadIcon = {
   color:'#5B8CC2',
   fontSize:'40px',
   position:'relative',
 }
-
 const Logo = {
   width:'180px'
+}
+const MenuButton = {
+  marginTop:'10px',
+  fontSize:'18px',
+  width:'100%',
+  padding:'15px 5px'
 }
 
 const activeItem = 'home'
@@ -54,10 +59,10 @@ class TopNav extends React.Component {
         <div style={HeadContainer}>
           <Container style={Head}>
             <Grid>
-              <Grid.Column className="" floated='left' width={5}>
+              <Grid.Column className="" floated='left' width={4}>
                 <img src='/static/images/logo_new.png' style={Logo} />
               </Grid.Column>
-              <Grid.Column className="" floated='right' width={7} style={{paddingTop:'25px'}}>
+              <Grid.Column className="" width={4} style={{paddingTop:'25px'}}>
                 <div style={{display:'inline-block'}}>
                   <div className="" style={{display:'inline-block'}}>
                     <Icon className="" name="marker" style={HeadIcon}/>
@@ -67,16 +72,21 @@ class TopNav extends React.Component {
                     <p style={HeadInfo}>Brgy. South Triangle Quezon City</p>
                   </div>
                 </div>
+              </Grid.Column>
+              <Grid.Column className="" width={4} style={{paddingTop:'25px'}}>
                 <div style={{display:'inline-block', marginLeft:'25px'}}>
                   <div className="" style={{display:'inline-block'}}>
                     <Icon name="call" style={HeadIcon}/>
                   </div>
                   <div className="" style={{display:'inline-block'}}>
-                    <p style={HeadInfoMain}>426-3051</p>
-                    <p style={HeadInfo}>marketing@qwickfinancial.com</p>
+                    <p style={HeadInfoMain}>0905 402 7240</p>
+                    <p style={HeadInfo}>sales@qwickfinancial.com</p>
                   </div>
                 </div>
               </Grid.Column>
+              {/*<Grid.Column className="border" floated='right' width={4}>
+                  <Button style={MenuButton} color='blue' basic><Icon name="download"/> Donwload Form</Button>
+                </Grid.Column>*/}
             </Grid>
           </Container>
         </div>
@@ -107,8 +117,8 @@ class TopNav extends React.Component {
               <Menu.Item name='About' active={activeItem === 'about'} onClick={this.handleItemClick} />
               <Menu.Item name='Contact' active={activeItem === 'contact'} onClick={this.handleItemClick} />
               <Menu.Menu position='right'>
-                <Menu.Item><Icon name="marker"/>Pacific Century Tower</Menu.Item>
-                <Menu.Item><Icon name="call"/>426-3051</Menu.Item>
+                <Menu.Item><Icon name="mail"/>sales@qwickfinancial.com</Menu.Item>
+                <Menu.Item><Icon name="call"/>0905 402 7240</Menu.Item>
               </Menu.Menu>
             </Container>
           </Sidebar>
